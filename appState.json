@@ -1,0 +1,136 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "15ed8a0b-b06a-422b-8ce4-01ec7615a6ad": {
+        "id": "15ed8a0b-b06a-422b-8ce4-01ec7615a6ad",
+        "parent": null,
+        "name": "kinesisnodejs.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "kinesisnodejs.js",
+        "cursor": {
+          "lineNumber": 9,
+          "column": 19
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "kinesisnodejs"
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1TestAPIput",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "372012c0-2f87-45ec-95a7-0a8ceb8114bd": {
+            "id": "372012c0-2f87-45ec-95a7-0a8ceb8114bd",
+            "name": "Test event",
+            "functionId": "15ed8a0b-b06a-422b-8ce4-01ec7615a6ad",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "15ed8a0b-b06a-422b-8ce4-01ec7615a6ad"
+    ],
+    "currentFileId": "15ed8a0b-b06a-422b-8ce4-01ec7615a6ad",
+    "resources": {
+      "kinesisK2": {
+        "name": "kinesisK2",
+        "type": "Kinesis",
+        "config": {
+          "mode": 0,
+          "StreamName": "K2",
+          "shards": 1,
+          "region": "us-east-1",
+          "operation": "describeStream"
+        }
+      },
+      "apigusEast1TestAPIput": {
+        "name": "apigusEast1TestAPIput",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/MyLambda": "98nqbj",
+            "/testdbput": "bu1jy0",
+            "/": "h2lelj6j7k",
+            "/newchange/test": "k6pdhn",
+            "/newchange": "q1ox7l",
+            "/testWithSlash": "q4m4g1",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/",
+          "resourceName": "",
+          "resourceId": "h2lelj6j7k",
+          "restMethod": "PUT",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "socks",
+          "stageDeploymentId": "7cagxb",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "kinesisnodejs",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1585738016889
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "kinesisnodejs",
+      "url": "https://github.com/Kumudikatest/kinesisnodejs"
+    }
+  }
+}
