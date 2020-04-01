@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "kinesisnodejs.js",
         "cursor": {
-          "lineNumber": 1,
-          "column": 1
+          "lineNumber": 11,
+          "column": 27
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -52,7 +52,7 @@
           "StreamName": "K2",
           "shards": 1,
           "region": "us-east-1",
-          "operation": "describeStream"
+          "operation": "putRecord"
         }
       },
       "apigusEast1TestAPIput": {
@@ -124,7 +124,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1585743860209
+    "lastSave": 1585749307780
   },
   "VCS_STATE": {
     "provider": "GitHub",
