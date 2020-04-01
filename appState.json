@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "kinesisnodejs.js",
         "cursor": {
-          "lineNumber": 11,
-          "column": 27
+          "lineNumber": 1,
+          "column": 1
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -124,7 +124,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1585749307780
+    "lastSave": 1585749599282
   },
   "VCS_STATE": {
     "provider": "GitHub",
